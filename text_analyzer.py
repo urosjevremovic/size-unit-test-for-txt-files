@@ -30,7 +30,7 @@ class TextAnalysisTests(unittest.TestCase):
     def setUp(self):
         """Fixture that creates a file for the text method to use"""
         self.filename = "Lorem_Ipsum.txt"
-        with open(self.filename, "rt") as f:
+        with open(self.filename, "wt") as f:
             f.write("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultricies ultricies venenatis.\n"
                     "Aliquam pulvinar, nunc id aliquet faucibus, elit libero tincidunt ante, sed malesuada tellus orci\n"
                     "et est. Nullam id libero in est varius faucibus at id enim. Pellentesque bibendum rutrum neque at\n"
